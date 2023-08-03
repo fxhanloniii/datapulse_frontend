@@ -1,13 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-direction: row;
 }
+
+.header {
+  background: #1F2532;
+  width: 290px;
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 290px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.logo h1 {
+  height: 52px;
+  color: #F2AA02;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: normal;
+  letter-spacing: 1.5px; 
+}
+
+.brandname p {
+  width: 290px;
+  height: 37px;
+  color: #7F8692;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.linksvg {
+  display: flex;
+  flex-direction: row;
+  width: 290px;
+  height: 45px;
+  align-items: center;
+  padding-left: 130px;
+}
+
+.linksvg a {
+  display: flex;
+  text-decoration: none;
+}
+
+.linksvg img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  mix-blend-mode: screen;
+  margin-right: 10px;
+}
+
+.linksvg p {
+  flex-shrink: 0;
+  color: #CDD8E4;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  margin: 0;
+}
+
