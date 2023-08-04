@@ -2,12 +2,15 @@ import React, { useEffect } from 'react'
 import * as d3 from 'd3';
 
 const Sales = () => {
-    const data = [35, 20, 30, 40, 50];
-    const width = 500;
-    const height = 300;
+    const data = [35, 20, 30, 40, 55, 60];
+    const width = 600;
+    const height = 400;
     const padding = 40;
   
     useEffect(() => {
+
+      d3.select('#chart').selectAll('svg').remove();
+
       const xScale = d3.scaleBand()
         .domain(d3.range(data.length))
         .range([padding, width - padding])
@@ -30,7 +33,7 @@ const Sales = () => {
         .attr('y', d => yScale(d))
         .attr('width', xScale.bandwidth())
         .attr('height', d => height - padding - yScale(d))
-        .attr('fill', 'green');
+        .attr('fill', 'blue');
   
       const xAxis = d3.axisBottom(xScale).tickFormat(i => i + 1);
       const yAxis = d3.axisLeft(yScale);
@@ -45,7 +48,11 @@ const Sales = () => {
     }, [data]);
   
     return (
-      <div id="chart"></div>
+        <div className="chart1">
+            <div ClassName="chartContainer">
+                <div id="chart"></div>
+            </div>
+        </div>
     )
   }
 export default Sales
